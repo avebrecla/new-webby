@@ -3,17 +3,17 @@
 @import 'tailwindcss';
 
 @theme {
-    --background-image-noise: linear-gradient(
-            to bottom,
-            color-mix(in oklab, var(--color-neutral-950) 0%, transparent),
-            color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
-        ),
-        url('/images/noise.png');
     --color-primary: #2bdcd2;
     --color-primary-content: #171717;
     --color-secondary: #016968;
-    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    --font-sans: 'Garamond', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
+
+    --animate-text-scroll: text-scroll 20s infinite linear;
+    @keyframes text-scroll {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+    }
 }
 
 @layer base {

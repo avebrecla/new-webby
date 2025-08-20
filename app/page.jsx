@@ -26,7 +26,7 @@ const ctx = getNetlifyContext();
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section>
+            {/* <section>
                 <ContextAlert className="mb-6" />
                 <h1 className="mb-4">Netlify Platform Starter - Next.js</h1>
                 <p className="mb-6 text-lg">Get started with Next.js and Netlify in seconds.</p>
@@ -44,7 +44,7 @@ export default function Page() {
                 <Markdown content={preDynamicContentExplainer} />
                 <RandomQuote />
                 <Markdown content={postDynamicContentExplainer} />
-            </section>
+            </section> */}
         </div>
     );
 }
