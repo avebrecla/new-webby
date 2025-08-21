@@ -37,7 +37,7 @@ export function FeedbackForm() {
             <Card title="what would u like to see?">
                 <form name="feedback" onSubmit={handleFormSubmit} className="flex flex-col gap-3 align-center">
                     <input type="hidden" name="form-name" value="feedback" />
-                    <input name="favorite color" type="text" placeholder="favorite color (just cause)" required className="input" />
+                    <input name="name" type="text" placeholder="favorite color (just cause)" required className="input" />
                     <input name="message" type="text" placeholder="recs" required className="input" />
                     <button className="btn" type="submit" disabled={status === 'pending'}>
                         Submit
