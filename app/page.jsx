@@ -1,9 +1,5 @@
-import Link from 'next/link';
 import { FeedbackForm } from 'components/feedback-form';
-import { getNetlifyContext } from 'utils';
 
-
-const ctx = getNetlifyContext();
 
 export default function Page() {
     return (

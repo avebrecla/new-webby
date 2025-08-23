@@ -3,6 +3,7 @@ import Link from 'next/link';
 import netlifyLogo from 'public/netlify-logo.svg';
 import githubLogo from 'public/images/github-mark-white.svg';
 import { WeatherData } from './weather';
+import { Spotify } from './spotify';
 
 
 export function LeftPanel() {
@@ -10,7 +11,7 @@ export function LeftPanel() {
         <div className="w-1/4 bg-gray-500/1 p-4 overflow-auto">
             <div className="min-h-full">
                 <WeatherData />
-                {/* weather */}
+                <Spotify />
                 {/* weather */}
                 {/* weather */}
             </div>
