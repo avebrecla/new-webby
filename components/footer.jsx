@@ -1,8 +1,10 @@
-let randomFactString = "rando fact of the day: ";
+'use client';
+
+import { useEffect, useState } from "react";
 
 export function Footer() {
     return (
-        <footer className="pt-8 pb-8 pl-4 pr-4">
+        <footer className="pt-4 pb-2">
             <div className="w-full text-white p-2 overflow-hidden">
                 <div className="whitespace-nowrap animate-text-scroll">
                     <RandomFactList />
@@ -12,13 +14,16 @@ export function Footer() {
     );
 }
 
-async function RandomFactList() {
-    const randomFact = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/today');
+function RandomFactList() {
+    const [fact, setFact] = useState("rando fact of the day: ");
 
-    const content = await randomFact.json();
-    randomFactString = randomFactString.concat(content.text);
+    useEffect(() => {
+        fetch('https://uselessfacts.jsph.pl/api/v2/facts/today')
+            .then(res => res.json())
+            .then(data => setFact("rando fact of the day: " + data.text));
+    }, []);
 
     return (
-            <span className="inline-block px-4">{randomFactString}</span>
-        );
+        <span className="inline-block px-4">{fact}</span>
+    );
 }

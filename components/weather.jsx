@@ -36,7 +36,7 @@ export function WeatherData() {
     if (!weatherData) return <div>Loading...</div>;
 
     return (
-        <div className="bg-stone-500 rounded-sm pb-2">
+        <div className="bg-stone-500 rounded-sm pb-2 shadow-sm/40">
             <h3 className="inline-block px-4 underline">Chapel Hill, NC</h3>
             <div className="flex">
                 <div className="w-1/3">

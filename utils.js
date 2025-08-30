@@ -35,3 +35,5 @@ export function uniqueName() {
 }
 
 export const uploadDisabled = process.env.NEXT_PUBLIC_DISABLE_UPLOADS?.toLowerCase() === "true";
+
+export const SPOTIFY_SECRET = process.env.SPOTIFY_SECRET;
