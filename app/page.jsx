@@ -10,7 +10,7 @@ export default function Page() {
             <div className="">
                 <p>$ aveWeb help</p>
                 <p>hello welcome to my website, this will be a place for me to show some things and ramble</p>
-                <p>let me know in the below feedback form if you have anything you'd like to see</p>
+                <p>let me know in the below feedback form if you have anything you&apos;d like to see</p>
             </div>
             <div className="pt-5">
                 <p className="pb-2">check out some of my things --&gt;</p>
