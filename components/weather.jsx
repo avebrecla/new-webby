@@ -33,14 +33,14 @@ export function WeatherData() {
         fetchData();
     }, []);
 
-    if (!weatherData) return <div>Loading...</div>;
+    if (!weatherData) return <div>weather loading...</div>;
 
     return (
-        <div className="bg-stone-500 rounded-sm pb-2 shadow-sm/40">
-            <h3 className="inline-block px-4 underline">Chapel Hill, NC</h3>
-            <div className="flex">
+        <div className="">
+            <p className="pb-2">current weather in chapel hill, nc --&gt;</p>
+            <div className="flex indent-5">
                 <div className="w-1/3">
-                    <h2 className="inline-block px-4">{weatherData.temperature_2m}&deg;</h2>
+                    <h2 className="inline-block">{weatherData.temperature_2m}&deg;</h2>
                 </div>
                 <div className="w-2/3 flex flex-col">
                     <div className="flex-1">
