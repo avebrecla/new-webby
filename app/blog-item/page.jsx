@@ -3,7 +3,6 @@
 import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import blogItems from '../../data/blog-items.json';
-import { Card } from '../../components/card';
 
 function BlogContent() {
     const searchParams = useSearchParams();
@@ -13,8 +12,8 @@ function BlogContent() {
     if (!currentBlog) return <div>Blog not found.</div>;
 
     return (
-        <Card className="font-mono" title={currentBlog.title + " | " + currentBlog.date}>
-            <p className="italic"></p>
+        <div className="font-mono">
+            <p className="italic pb-3">{currentBlog.title} | {currentBlog.date}</p>
             <div>
                 {currentBlog.tags.map((tag) => (
                     <span key={tag} className="text-xs italic pr-2">#{tag}</span>
@@ -23,7 +22,7 @@ function BlogContent() {
             {currentBlog.paragraphs.map((para, index) => (
                 <p key={index} className="mb-4">{para}</p>
             ))}
-        </Card>
+        </div>
     );
 }
 
