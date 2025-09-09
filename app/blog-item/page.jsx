@@ -9,7 +9,7 @@ function BlogContent() {
     const currentBlog = blogItems.find(item => item.path === searchParams.get('path'));
     console.log("Current Blog:", currentBlog);
 
-    if (!currentBlog) return <div>Blog not found.</div>;
+    if (!currentBlog) return <div>blog not found</div>;
 
     return (
         <div className="font-mono">

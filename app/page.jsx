@@ -21,7 +21,7 @@ export default function Page() {
                     </div>
                     <div className="flex items-center">
                         <Link className="link-cool" href="/projects"><span className="font-bold mr-2">projects</span></Link>
-                        <span>stuff i’ve built or am building</span>
+                        <span>stuff i&apos;ve built or am building</span>
                     </div>
                     <div className="flex items-center">
                         <Link className="link-cool" href="/about"><span className="font-bold mr-2">about</span></Link>
