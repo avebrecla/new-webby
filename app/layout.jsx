@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/images/speak-funny.png" sizes="any" />
             </head>
-            <body className="antialiased text-white h-screen bg-black">
+            <body className="text-white bg-black">
                 <AsciiTitle />
-                <main className="grow p-5">{children}</main>
+                <main className="grow p-5 min-w-full">{children}</main>
             </body>
         </html>
     );

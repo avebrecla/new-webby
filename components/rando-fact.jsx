@@ -15,9 +15,9 @@ export function RandoFact() {
 
     return (
         <footer className="">
-            <div className="w-full text-white overflow-wrap">
+            <div className="w-full text-white">
                 <p className="pb-2">rando fact of the day --&gt;</p>
-                <div className="whitespace-nowrap indent-5">
+                <div className="ml-10">
                     <span className="inline-block">{fact}</span>
                 </div>
             </div>

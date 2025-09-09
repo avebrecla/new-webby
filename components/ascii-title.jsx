@@ -32,7 +32,7 @@ const rainbowColors = [
 
 export function AsciiTitle() {
   return (
-    <pre className="font-mono text-sm md:text-lg leading-none pb-10 pl-5">
+    <pre className="font-mono text-sm md:text-lg leading-none pb-10 pl-5 my-responsive-box">
       {asciiArtLines.map((line, lineIndex) => (
         <div key={lineIndex}>
           {line.split('').map((char, charIndex) => (

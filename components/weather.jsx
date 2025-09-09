@@ -37,7 +37,7 @@ export function WeatherData() {
 
     return (
         <div className="">
-            <p className="pb-2">current weather in chapel hill, nc --&gt;</p>
+            <p className="pb-2">current weather where i am --&gt;</p>
             <div className="flex indent-5">
                 <div className="w-1/3">
                     <h2 className="inline-block">{weatherData.temperature_2m}&deg;</h2>
