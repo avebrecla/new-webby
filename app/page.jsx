@@ -42,7 +42,7 @@ export default function Page() {
                 <Spotify />
             </div>
             <AsciiDivider />
-            <div className="pt-10">
+            <div className="">
                 <FeedbackForm />
             </div>
         </section>

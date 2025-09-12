@@ -33,15 +33,15 @@ export function FeedbackForm() {
     return (
         <div className="w-full md:max-w-md mb-15">
             <p className="pb-3 font-bold">feedback form --&gt;</p>
-            <form name="feedback" onSubmit={handleFormSubmit} className="flex flex-col align-center indent-10">
+            <form name="feedback" onSubmit={handleFormSubmit} className="flex flex-col align-center pl-10">
                 <input type="hidden" name="form-name" value="feedback" />
-                <div className="flex items-center gap-2">
-                    <label htmlFor="name">favorite color:</label>
-                    <input id="name" name="name" type="text" required className="flex-1 pb-2" />
+                <div className="flex gap-2">
+                    <label htmlFor="name" className="sr-only">favorite color:</label>
+                    <input id="name" name="name" placeholder="favorite color?" type="text" required className="flex-1 pb-2" />
                 </div>
-                <div className="flex items-center gap-2">
-                    <label htmlFor="message">recs:</label>
-                    <input id="message" name="message" type="text" required className="flex-1 pb-2" />
+                <div className="flex gap-2">
+                    <label htmlFor="message" className="sr-only">recs:</label>
+                    <input id="message" name="message" placeholder="recs?" type="text" required className="flex-1 pb-2" />
                 </div>
                 <button className="btn">
                     Submit

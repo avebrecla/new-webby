@@ -71,26 +71,38 @@
         @apply py-2 px-2;
     }
 
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+}
+
+@layer components {
     .my-responsive-box {
-        @apply max-w-sm;
+        @apply w-full;
+        font-size: 0.25rem; /* fallback for very small screens */
     }
-
-    @screen sm {
+    @media (min-width: 320px) {
         .my-responsive-box {
-        @apply max-w-sm;
+            font-size: 0.55rem;
         }
     }
-
-    @screen md {
+    @media (min-width: 640px) {
         .my-responsive-box {
-        @apply max-w-sm;
+            font-size: 1rem;
         }
     }
-
-    @screen lg {
+    @media (min-width: 1024px) {
         .my-responsive-box {
-        @apply max-w-sm;
+            font-size: 1.25rem;
         }
     }
-
 }
