@@ -92,7 +92,7 @@
     }
     @media (min-width: 320px) {
         .my-responsive-box {
-            font-size: 0.55rem;
+            font-size: 0.575rem;
         }
     }
     @media (min-width: 640px) {

@@ -24,6 +24,10 @@ export default function Page() {
                         <span>stuff i&apos;ve built or am building</span>
                     </div>
                     <div className="flex">
+                        <Link className="link-cool pl-10 mr-5" href="/music-profile"><span className="font-bold">music profile</span></Link>
+                        <span>what i&apos;m listening to</span>
+                    </div>
+                    <div className="flex">
                         <Link className="link-cool indent-10 mr-5" href="/about"><span className="font-bold">about</span></Link>
                         <span>learn more about me</span>
                     </div>
@@ -31,15 +35,11 @@ export default function Page() {
             </div>
             <AsciiDivider />
             <div className="">
-                <RandoFact />
-            </div>
-            <AsciiDivider />
-            <div className="">
                 <WeatherData />
             </div>
             <AsciiDivider />
             <div className="">
-                <Spotify />
+                <RandoFact />
             </div>
             <AsciiDivider />
             <div className="">
